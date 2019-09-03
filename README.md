@@ -2,6 +2,8 @@
 EC2 inline policy
 inline policy is just assigned to one user or group
 view info about ec2 and ability to start and stop instances
+
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -18,3 +20,4 @@ view info about ec2 and ability to start and stop instances
     }
   ]
 }
+```
