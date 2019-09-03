@@ -1,5 +1,8 @@
+
 # AWS-CLOUD
-EC2 inline policy
+#
+
+## EC2 inline policy
 "inline policy is just assigned to one user or group"
 view information about EC22 and ability to start and stop instances
 
@@ -21,16 +24,15 @@ view information about EC22 and ability to start and stop instances
   ]
 }
 ```
-
+## Grants access to list and describe information about ec2, elastic load balancing, CloudWatch and auto scaling.
 ```json
-Grants access to list and describe information about ec2, elastic load balancing, CloudWatch and auto scaling.
 {
   "Version": "2012-10-17",
   "Statement": [
     {
       "Effect": "Allow",
       "Action": "ec2:Describe*",
-      "Resource": "*
+      "Resource": "*"
 },
     {
       "Effect": "Allow",
@@ -55,10 +57,8 @@ Grants access to list and describe information about ec2, elastic load balancing
 }
 
 ```
-
+## Read only accesss policy for s3
 ```json
-Read only accesss policy for s3
-
 {
   "Version": "2012-10-17",
   "Statement": [
